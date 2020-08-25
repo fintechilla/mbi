@@ -62,29 +62,3 @@ class MM:
         else:
             result = np.cumprod(mat, axis)
             return result
-
-# print("Matrix")
-# mm = MM()
-# mm.setMatrices((2, 3), (3, 3))
-# C = mm.quickDotMult()
-# ns = 10
-# print("Min: ")
-# print("_"*ns)
-# print("Min of whole matrix", mm.statMin(C, -1))
-# print("Min of axis 0 of matrix", mm.statMin(C, 0))
-# print("Min of axis 1 of matrix", mm.statMin(C, 1))
-# print("_"*ns)
-#
-# print("Max: ")
-# print("_"*ns)
-# print("Max of whole matrix", mm.statMax(mm.A, -1))
-# print("Max of axis 0 of matrix", mm.statMax(mm.A, 0))
-# print("Max of axis 1 of matrix", mm.statMax(mm.A, 1))
-# print("_"*ns)
-#
-# print("Cummulative Product: ")
-# print("_"*ns)
-# print("Cummulative product of whole matrix ", mm.cummulativeProd(C, -1))
-# print("Cummulative product of axis 1 (row) of matrix ", mm.cummulativeProd(C, 1))
-# print("Cummulative product of axis 0 (column) of matrix ", mm.cummulativeProd(C, 0))
-# print("_"*ns)

@@ -162,20 +162,6 @@ class Window(QWidget):
         self.maxStatSpinBox.setFont(fontBox)
         self.meanStatSpinBox.setFont(fontBox)
 
-    # def calculateMin(self):
-    #     self.getMatrices()
-
-    # def panelSaveFile(self):
-    #     self.fileName.move(self.xLabels, 220)
-    #     self.fileName.setFont(fontLabels)
-    #     self.fileName.setPlaceholderText("File name")
-    #
-    #     self.boxSaveFile.move(self.xBoxes + 50, 220)
-    # self.btnSaveFile.clicked.connect(self.getMatrices())
-
-    # self.fileDialog = QFileDialog
-
-
 def main():
     App = QApplication(sys.argv)
     window = Window()
@@ -184,26 +170,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# if self.boxSaveFile.isChecked():
-#     print("boxFileName is checked")
-#     if len(self.fileName.text()) > 0:
-#         print(f"Saving into file {self.fileName.text()}")
-#         self.boxSaveFile.setChecked(False)
-#         self.fileName.clear()
-#         self.warningNoFileName.close()
-#         self.openFile(self)
-#     else:
-#         print("No file name specified")
-#         self.warningNoFileName.move(self.xBoxes + 50 + 70, 220)
-#         self.warningNoFileName.setStyleSheet("background-color:red")
-# ******* Warnings **************
-
-# self.warningNoFileName.move(1000, 1000)
-# self.warningNoFileName.setFont(fontLabels)
-
-# ************** Boxes **********
-#       def initUIElements(self):
-#         self.fileName = QLineEdit(self)
-#         self.boxSaveFile = QCheckBox("Save file?", self)
-#         self.warningNoFileName = QLabel("No file name specified!!", self)
